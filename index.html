@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura & Alex</title>
+    <link rel="icon" type="image/x-icon" href="./img/logos/hero-logo.png">
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/stylesPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/front-flex.min.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <style type="text/css" media="all" id="siteorigin-panels-layouts-head">
+        /* Layout 7 */
+        #pgc-7-0-0,
+        #pgc-7-1-0,
+        #pgc-7-2-0,
+        #pgc-7-3-0,
+        #pgc-7-4-0,
+        #pgc-7-5-0,
+        #pgc-7-7-0,
+        #pgc-7-8-0,
+        #pgc-7-9-0,
+        #pgc-7-10-0 {
+            width: 100%;
+            width: calc(100% - (0 * 30px))
+        }
+
+        #pg-7-0,
+        #pg-7-1,
+        #pg-7-2,
+        #pg-7-3,
+        #pg-7-4,
+        #pg-7-5,
+        #pg-7-6,
+        #pg-7-7,
+        #pg-7-8,
+        #pg-7-9,
+        #pg-7-10,
+        #pl-7 .so-panel:last-of-type {
+            margin-bottom: 0px
+        }
+
+        #pgc-7-6-0,
+        #pgc-7-6-2 {
+            width: 20%;
+            width: calc(20% - (0.8 * 30px))
+        }
+
+        #pgc-7-6-1 {
+            width: 60%;
+            width: calc(60% - (0.4 * 30px))
+        }
+
+        #pl-7 .so-panel {
+            margin-bottom: 30px
+        }
+
+        #pg-7-0>.panel-row-style,
+        #pg-7-2>.panel-row-style,
+        #pg-7-5>.panel-row-style,
+        #pg-7-7>.panel-row-style,
+        #pg-7-9>.panel-row-style {
+            padding: 100px 0px
+        }
+
+        #panel-7-0-0-0>.panel-widget-style {
+            margin-bottom: 2em
+        }
+
+        #pg-7-1>.panel-row-style {
+            background-color: #ecf2f0;
+            padding: 60px 0px
+        }
+
+        #pg-7-3>.panel-row-style,
+        #pg-7-10>.panel-row-style {
+            /* background-color: #f6f4f2; */
+            padding: 100px 0px
+        }
+
+        #pg-7-4>.panel-row-style {
+            background-color: #f6f4f2;
+            padding: 0px;
+        }
+
+        #pg-7-6>.panel-row-style {
+            background-color: #b4d2c8;
+            background-image: url(./img/rsvp.jpg);
+            padding: 60px 0px
+        }
+
+        #pg-7-6.panel-has-style>.panel-row-style,
+        #pg-7-6.panel-no-style {
+            -webkit-align-items: flex-start;
+            align-items: flex-start
+        }
+
+        #panel-7-6-1-0>.panel-widget-style {
+            background-color: #ffffff;
+            padding: 3em;
+            margin-bottom: -30px
+        }
+
+        #panel-7-6-1-1>.panel-widget-style {
+            background-color: #ffffff;
+            padding: 0em 3em 3em
+        }
+
+        #panel-7-7-0-2>.panel-widget-style {
+            margin-top: 8em
+        }
+
+        #pg-7-8>.panel-row-style {
+            background-color: #c3bbab;
+            background-image: url(./img/quote.jpg);
+            padding: 90px 0px 30px
+        }
+
+        #panel-7-8-0-0>.panel-widget-style {
+            color: #ffffff
+        }
+
+        @media (max-width: 767px) {
+
+            #pg-7-0.panel-no-style,
+            #pg-7-0.panel-has-style>.panel-row-style,
+            #pg-7-0,
+            #pg-7-1.panel-no-style,
+            #pg-7-1.panel-has-style>.panel-row-style,
+            #pg-7-1,
+            #pg-7-2.panel-no-style,
+            #pg-7-2.panel-has-style>.panel-row-style,
+            #pg-7-2,
+            #pg-7-3.panel-no-style,
+            #pg-7-3.panel-has-style>.panel-row-style,
+            #pg-7-3,
+            #pg-7-4.panel-no-style,
+            #pg-7-4.panel-has-style>.panel-row-style,
+            #pg-7-4,
+            #pg-7-5.panel-no-style,
+            #pg-7-5.panel-has-style>.panel-row-style,
+            #pg-7-5,
+            #pg-7-6.panel-no-style,
+            #pg-7-6.panel-has-style>.panel-row-style,
+            #pg-7-6,
+            #pg-7-7.panel-no-style,
+            #pg-7-7.panel-has-style>.panel-row-style,
+            #pg-7-7,
+            #pg-7-8.panel-no-style,
+            #pg-7-8.panel-has-style>.panel-row-style,
+            #pg-7-8,
+            #pg-7-9.panel-no-style,
+            #pg-7-9.panel-has-style>.panel-row-style,
+            #pg-7-9,
+            #pg-7-10.panel-no-style,
+            #pg-7-10.panel-has-style>.panel-row-style,
+            #pg-7-10 {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #pg-7-0>.panel-grid-cell,
+            #pg-7-0>.panel-row-style>.panel-grid-cell,
+            #pg-7-1>.panel-grid-cell,
+            #pg-7-1>.panel-row-style>.panel-grid-cell,
+            #pg-7-2>.panel-grid-cell,
+            #pg-7-2>.panel-row-style>.panel-grid-cell,
+            #pg-7-3>.panel-grid-cell,
+            #pg-7-3>.panel-row-style>.panel-grid-cell,
+            #pg-7-4>.panel-grid-cell,
+            #pg-7-4>.panel-row-style>.panel-grid-cell,
+            #pg-7-5>.panel-grid-cell,
+            #pg-7-5>.panel-row-style>.panel-grid-cell,
+            #pg-7-6>.panel-grid-cell,
+            #pg-7-6>.panel-row-style>.panel-grid-cell,
+            #pg-7-7>.panel-grid-cell,
+            #pg-7-7>.panel-row-style>.panel-grid-cell,
+            #pg-7-8>.panel-grid-cell,
+            #pg-7-8>.panel-row-style>.panel-grid-cell,
+            #pg-7-9>.panel-grid-cell,
+            #pg-7-9>.panel-row-style>.panel-grid-cell,
+            #pg-7-10>.panel-grid-cell,
+            #pg-7-10>.panel-row-style>.panel-grid-cell {
+                width: 100%;
+                margin-right: 0
+            }
+
+            #pgc-7-6-0,
+            #pgc-7-6-1 {
+                margin-bottom: 30px
+            }
+
+            #pl-7 .panel-grid-cell {
+                padding: 0
+            }
+
+            #pl-7 .panel-grid .panel-grid-cell-empty {
+                display: none
+            }
+
+            #pl-7 .panel-grid .panel-grid-cell-mobile-last {
+                margin-bottom: 0px
+            }
+        }
+    </style>
+    <style id="kirki-inline-styles">
+        #preloader,
+        .pace-progress {
+            background-color: #b4d2c8;
+        }
+
+        a {
+            color: #b4d2c8;
+        }
+
+        .jackrose-sow-gallery-grid-filters a.active {
+            border-color: #b4d2c8;
+        }
+
+        .button,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .wp-block-button__link,
+        .wp-block-file .wp-block-file__button {
+            background-color: #b4d2c8;
+            border-color: #b4d2c8;
+            color: #ffffff;
+        }
+
+        .button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .wp-block-button__link:hover,
+        .wp-block-file .wp-block-file__button:hover,
+        .button:focus,
+        button:focus,
+        input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        .wp-block-button__link:focus,
+        .wp-block-file .wp-block-file__button:focus,
+        .button:active,
+        button:active,
+        input[type="button"]:active,
+        input[type="reset"]:active,
+        input[type="submit"]:active,
+        .wp-block-button__link:active,
+        .wp-block-file .wp-block-file__button:active {
+            background-color: #bcd7ce;
+            border-color: #bcd7ce;
+        }
+
+        .button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .wp-block-button__link:hover,
+        .wp-block-file .wp-block-file__button:hover,
+        .button:focus,
+        button:focus,
+        input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        .wp-block-button__link:focus,
+        .wp-block-file .wp-block-file__button:focus,
+        .button:active,
+        button:active,
+        input[type="button"]:active,
+        input[type="reset"]:active,
+        input[type="submit"]:active,
+        .wp-block-button__link:active,
+        .wp-block-file .wp-block-file__button:active {
+            color: #ffffff;
+        }
+
+        .header-section,
+        .header-navigation ul ul {
+            background-color: #ffffff;
+        }
+
+        .header-section,
+        .header-navigation ul ul,
+        .header-navigation ul ul li {
+            border-color: #e5e5e5;
+        }
+
+        .header-section,
+        .header-section a,
+        .header-navigation-toggle {
+            color: #888888;
+        }
+
+        .header-section a:hover,
+        .header-section a:focus,
+        .header-navigation-toggle:hover,
+        .header-navigation-toggle:focus {
+            color: #444444;
+        }
+
+        .header-navigation>div>ul>li>a:hover:after,
+        .header-navigation>div>ul>li>a.focus:after {
+            background-color: #b4d2c8;
+        }
+
+        .header-section .ribbon-menu,
+        .header-section .ribbon-menu:hover,
+        .header-section .ribbon-menu:focus {
+            background-color: #b4d2c8;
+            color: #ffffff;
+        }
+
+        .header-section .ribbon-menu:after {
+            border-color: #b4d2c8;
+        }
+
+        .sakura.hero-effect-item {
+            background: #ffffff;
+        }
+
+        .hero-button,
+        .hero-button:hover,
+        .hero-button:focus {
+            color: #ffffff;
+        }
+
+        .footer-section {
+            padding: 15% 0 3em;
+            background-image: url(./img/gallery/footer.jpg);
+            background-position: center bottom;
+            color: #e5e5e5;
+        }
+
+        .footer-section a,
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: #ffffff;
+        }
+
+        .page-template-invitation {
+            background-color: #c8dcd2;
+            background-image: url(./img/gallery/invitation-bg.jpg);
+        }
+
+        @media screen and (max-width: 1023px) {
+            .header-navigation>div {
+                background-color: #ffffff;
+            }
+
+            .header-navigation>div>ul,
+            .header-navigation li {
+                border-color: #e5e5e5;
+            }
+        }
+    </style>
+    <style id='jackrose-inline-css' type='text/css'>
+        body {
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+
+        .typography-menu,
+        .button,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .header-section,
+        .nav-links,
+        #cancel-comment-reply-link {
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+
+        .typography-section-heading {
+            font-family: "Alex Brush";
+        }
+
+        .typography-title,
+        .typography-heading,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .comment-reply-title,
+        .comments-title,
+        #gwolle_gb_new_entry h3 {
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+    </style>
+
+    <!-- Fonts -->
+    <link rel='stylesheet' id='google-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Alex+Brush%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i&#038;subset=latin'
+        type='text/css' media='all' />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="js/configWeb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js" id='pace-js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script defer type='text/javascript' src='./js/styling.min.js' id='siteorigin-panels-front-styles-js'></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script type='text/javascript' src="./js/formRsvp.js" id="form-js"></script>
+</head>
+
+<body
+    class="home page-template page-template-page-templates page-template-one-page page-template-page-templatesone-page-php page page-id-7 jackrose-enable-animations siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home">
+    <!-- PreLoader -->
+    <div id="preloader" class="preloader">
+        <div class="wrapper">
+            <div class="preloader-content">
+                <img src="img/logos/hero-logo.png" width="400" height="400">
+            </div>
+        </div>
+    </div>
+
+    <!-- Page -->
+    <div id="page" class="hfeed site">
+        <div id="top"></div>
+        <!-- Carousel -->
+        <div id="hero" class="hero-section">
+            <div class="hero-slider" data-jackrose-autoplay="5000">
+                <div id="hero-slide-0" class="hero-slide">
+                    <div class="hero-slide-background section-background">
+                        <img class="image-bg" src="./img/hero/hero3.jpg" width="1600" height="900"
+                            data-stellar-ratio="0.5">
+                    </div>
+                    <div class="hero-slide-overlay" style="background-color: rgba(130,160,150,0.3)"></div>
+                </div>
+                <div id="hero-slide-1" class="hero-slide">
+                    <div class="hero-slide-background section-background">
+                        <img class="image-bg" src="./img/hero/hero2.jpg" width="1600" height="900"
+                            data-stellar-ratio="0.5">
+                    </div>
+                    <div class="hero-slide-overlay" style="background-color: rgba(130,160,150,0.3)"></div>
+                </div>
+                <div id="hero-slide-2" class="hero-slide">
+                    <div class="hero-slide-background section-background">
+                        <img class="image-bg" src="./img/hero/hero1.jpg" width="1600" height="900"
+                            data-stellar-ratio="0.5">
+                    </div>
+                    <div class="hero-slide-overlay" style="background-color: rgba(130,160,150,0.3)"></div>
+                </div>
+            </div>
+            <div id="hero-effect" class="hero-effect" data-jackrose-effect="petal"></div>
+            <div id="hero-logo" class="hero-logo">
+                <div class="wrapper">
+                    <div class="hero-logo-image">
+                        <img width="400" height="400" src="./img/logos/hero-logo.png" class="attachment-full size-full"
+                            alt="Jack &amp; Rose" loading="lazy"
+                            srcset="./img/logos/hero-logo.png 400w, ./img/logos//hero-logo-150x150.png 150w, ./img/logos/hero-logo-300x300.png 300w"
+                            sizes="(max-width: 400px) 100vw, 400px" />
+                    </div>
+                    <div class="hero-action">
+                        <a href="#" class="hero-button anchor-link">
+                            <span>Entrar en el sitio</span>
+                            <i class="fa fa-angle-double-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <div id="header" class="header-anchor header-anchor-bottom">
+            <header id="masthead" class="header-section site-header header-floating" role="banner">
+                <div class="wrapper">
+                    <h1 class="header-logo site-branding">
+                        <a href="#" rel="home">
+                            <img width="50" height="50" src="img/logos/header-logo.png"
+                                class="attachment-full size-full" alt="Alex &amp; Laura" loading="lazy" />
+                        </a>
+                    </h1>
+                    <a class="ribbon-menu anchor-link" href="#rsvp" data-bs-toggle="tooltip"
+                        title="Confirme su asistencia">
+                        <span>RSVP</span>
+                    </a>
+                    <nav id="site-navigation" class="header-navigation main-navigation clear" role="navigation">
+                        <button class="header-navigation-toggle menu-toggle toggle">
+                            <span class="fa fa-navicon"></span>
+                            <span class="screen-reader-text">Primary Menu</span>
+                        </button>
+                        <div class="menu-primary-container">
+                            <ul id="primary-menu" class="menu">
+                                <li id="menu-item-49"
+                                    class="anchor-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-49">
+                                    <a href="#intro" aria-current="page">Novio &#038; Novia</a>
+                                </li>
+                                <li id="menu-item-48"
+                                    class="anchor-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48">
+                                    <a href="#events" aria-current="page">Cuándo &#038; Dónde</a>
+                                </li>
+                                <li id="menu-item-50"
+                                    class="anchor-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-50">
+                                    <a href="#gallery" aria-current="page">Galería</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <!-- Content -->
+        <div id="content" class="site-content content-section">
+            <div class="wrapper">
+                <div id="primary" class="content-area no-sidebar">
+                    <main id="main" class="site-main" role="main">
+                        <article id="post-7" class="post-7 page type-page status-publish hentry">
+                            <div class="entry-content">
+                                <!-- Sections -->
+                                <div id="pl-7" class="panel-layout">
+                                    <!-- Section Gromm & Bride -->
+                                    <div id="pg-7-0" class="panel-grid panel-has-style">
+                                        <div id="intro" data-jackrose-anchor="intro"
+                                            class="panel-row-style panel-row-style-for-7-0">
+                                            <div id="pgc-7-0-0" class="panel-grid-cell">
+                                                <div id="panel-7-0-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-couple-intro panel-first-child"
+                                                    data-index="0">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-0-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-couple-intro so-widget-jackrose-sow-couple-intro-default-d75171398898-7">
+                                                            <div class="jackrose-sow-couple-intro align-center">
+                                                                <div class="jackrose-sow-couple-intro-groom ">
+                                                                    <div class="jackrose-sow-couple-intro-photo">
+                                                                        <img width="240" height="260"
+                                                                            src="./img/intro/intro-groom.png"
+                                                                            class="attachment-full size-full" alt=""
+                                                                            loading="lazy" />
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-couple-intro-name typography-heading">
+                                                                        John Alexander Hernández Restrepo</div>
+                                                                </div>
+                                                                <div class="jackrose-sow-couple-intro-separator ">
+                                                                    <img width="160" height="100"
+                                                                        src="./img/intro/intro-separator.png"
+                                                                        class="attachment-full size-full" alt=""
+                                                                        loading="lazy" />
+                                                                </div>
+                                                                <div class="jackrose-sow-couple-intro-bride ">
+                                                                    <div class="jackrose-sow-couple-intro-photo">
+                                                                        <img width="240" height="260"
+                                                                            src="img/intro/intro-bride.png"
+                                                                            class="attachment-full size-full" alt=""
+                                                                            loading="lazy" />
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-couple-intro-name typography-heading">
+                                                                        Laura Marcela Aguirre Ortega</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-0-0-1"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-last-child"
+                                                    data-index="1">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-0-0-1">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888">Por todos los momentos
+                                                                    felices que hemos vivido, y por todo lo que está por
+                                                                    llegar de la mano de Dios.</p>
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #dcc8b4">¡Nos casamos!</h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888">Y nos encantaría compartir
+                                                                    este día con las personas más especiales para
+                                                                    nosotros</p>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888">el 14 de diciembre de 2024
+                                                                    &mdash; Llanogrande, Antioquia, Colombia. </p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- CountTime -->
+                                    <div id="pg-7-1" class="panel-grid panel-has-style">
+                                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-1"
+                                            data-stretch-type="full" id="countdown" data-jackrose-anchor="countdown">
+                                            <div id="pgc-7-1-0" class="panel-grid-cell">
+                                                <div id="panel-7-1-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-countdown panel-first-child panel-last-child"
+                                                    data-index="2">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-1-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-countdown so-widget-jackrose-sow-countdown-default-d75171398898-7">
+                                                            <div class="jackrose-sow-countdown align-center"
+                                                                data-jackrose-target="2024/12/14 15:00:00"
+                                                                data-jackrose-build="m_n_H_M_S">
+                                                                <div class="jackrose-sow-countdown-fragment jackrose-sow-countdown-months"
+                                                                    data-jackrose-format="m"
+                                                                    data-jackrose-singular="month"
+                                                                    data-jackrose-plural="months">
+                                                                    <big></big>
+                                                                    <small></small>
+                                                                </div>
+                                                                <div class="jackrose-sow-countdown-fragment jackrose-sow-countdown-days"
+                                                                    data-jackrose-format="n"
+                                                                    data-jackrose-singular="day"
+                                                                    data-jackrose-plural="days">
+                                                                    <big></big>
+                                                                    <small></small>
+                                                                </div>
+                                                                <div class="jackrose-sow-countdown-fragment jackrose-sow-countdown-hours"
+                                                                    data-jackrose-format="H"
+                                                                    data-jackrose-singular="hour"
+                                                                    data-jackrose-plural="hours">
+                                                                    <big></big>
+                                                                    <small></small>
+                                                                </div>
+                                                                <div class="jackrose-sow-countdown-fragment jackrose-sow-countdown-minutes"
+                                                                    data-jackrose-format="M"
+                                                                    data-jackrose-singular="minute"
+                                                                    data-jackrose-plural="minutes">
+                                                                    <big></big>
+                                                                    <small></small>
+                                                                </div>
+                                                                <div class="jackrose-sow-countdown-fragment jackrose-sow-countdown-seconds"
+                                                                    data-jackrose-format="S"
+                                                                    data-jackrose-singular="second"
+                                                                    data-jackrose-plural="seconds">
+                                                                    <big></big>
+                                                                    <small></small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- When & Where -->
+                                    <div id="pg-7-3" class="panel-grid panel-has-style">
+                                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-3"
+                                            data-stretch-type="full" id="events" data-jackrose-anchor="events">
+                                            <div id="pgc-7-3-0" class="panel-grid-cell">
+                                                <div id="panel-7-3-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-first-child"
+                                                    data-index="5">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-3-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #c8b4a0" data-bs-toggle="tooltip"
+                                                                    title="Donde & Cuando">Donde &amp;Cuando</h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888"></p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-3-0-1"
+                                                    class="so-panel widget widget_jackrose-sow-events-grid panel-last-child"
+                                                    data-index="6">
+                                                    <div
+                                                        class="so-widget-jackrose-sow-events-grid so-widget-jackrose-sow-events-grid-default-d75171398898-7">
+                                                        <div
+                                                            class="jackrose-sow-events-grid jackrose-sow-events-grid-2-columns clear">
+                                                            <div
+                                                                class="jackrose-sow-events-grid-item jackrose-animation-fade-in-up">
+                                                                <div class="jackrose-sow-events-grid-item-wrapper"
+                                                                    style="background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                                                    <div class="jackrose-sow-events-grid-item-photo">
+                                                                        <img width="540" height="270"
+                                                                            src="./img/event/event-ceremony-540x270.jpg"
+                                                                            class="attachment-grid size-grid" alt=""
+                                                                            loading="lazy"
+                                                                            srcset="./img/event/event-ceremony-540x270.jpg 540w"
+                                                                            sizes="(max-width: 540px) 100vw, 540px" />
+                                                                    </div>
+                                                                    <div class="jackrose-sow-events-grid-item-icon">
+                                                                        <img width="60" height="60"
+                                                                            src="./img/event/event-icon-ceremony.png"
+                                                                            class="attachment-full size-full" alt=""
+                                                                            loading="lazy" />
+                                                                    </div>
+                                                                    <h4
+                                                                        class="jackrose-sow-events-grid-item-title typography-heading">
+                                                                        Ceremonia</h4>
+                                                                    <div
+                                                                        class="jackrose-sow-events-grid-item-description">
+                                                                        <p>Parroquia Nuestra Señora de Chiquinquirá.</p>
+                                                                    </div>
+                                                                    <div class="jackrose-sow-events-grid-item-summary">
+                                                                        14 de Diciembre, 2024 — 4:00 PM — El Tablazo -
+                                                                        Rionegro, Antioquia</div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="jackrose-sow-events-grid-item jackrose-animation-fade-in-up">
+                                                                <div class="jackrose-sow-events-grid-item-wrapper"
+                                                                    style="background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                                                    <div class="jackrose-sow-events-grid-item-photo">
+                                                                        <img width="540" height="270"
+                                                                            src="./img/event/event-party-540x270.jpg"
+                                                                            class="attachment-grid size-grid" alt=""
+                                                                            loading="lazy"
+                                                                            srcset="./img/event/event-party-540x270.jpg 540w"
+                                                                            sizes="(max-width: 540px) 100vw, 540px" />
+                                                                    </div>
+                                                                    <div class="jackrose-sow-events-grid-item-icon">
+                                                                        <img width="60" height="60"
+                                                                            src="./img/event/event-icon-party.png"
+                                                                            class="attachment-full size-full" alt=""
+                                                                            loading="lazy" />
+                                                                    </div>
+                                                                    <h4
+                                                                        class="jackrose-sow-events-grid-item-title typography-heading">
+                                                                        Recepción</h4>
+                                                                    <div
+                                                                        class="jackrose-sow-events-grid-item-description">
+                                                                        <p>Imperial Eventos Campestre.</p>
+                                                                    </div>
+                                                                    <div class="jackrose-sow-events-grid-item-summary">
+                                                                        14 de Diciembre, 2024 — 5:30 PM — Llanogrande -
+                                                                        Pontezuela, Rionegro, Antioquia</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Map -->
+                                    <div id="pg-7-4" class="panel-grid panel-has-style">
+                                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-4"
+                                            data-stretch-type="full-stretched" id="location"
+                                            data-jackrose-anchor="location">
+                                            <div id="pgc-7-4-0" class="panel-grid-cell">
+                                                <div id="panel-7-4-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-google-maps panel-first-child panel-last-child"
+                                                    data-index="7">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-4-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-google-maps so-widget-jackrose-sow-google-maps-default-d75171398898-7">
+                                                            <div class="jackrose-sow-maplibre"
+                                                                data-jackrose-target="gmaps-1">
+                                                                <div id="gmaps-1"></div>
+                                                                <style type="text/css">
+                                                                    #gmaps-1 {
+                                                                        height: 600px;
+                                                                    }
+
+                                                                    @media screen and (max-width: 767px) {
+                                                                        #gmaps-1 {
+                                                                            height: 340px;
+                                                                        }
+                                                                    }
+                                                                </style>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Gif Register -->
+                                    <div id="pg-7-5" class="panel-grid panel-has-style">
+                                        <div id="registry" data-jackrose-anchor="registry"
+                                            class="panel-row-style panel-row-style-for-7-5">
+                                            <div id="pgc-7-5-0" class="panel-grid-cell">
+                                                <div id="panel-7-5-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-first-child"
+                                                    data-index="8">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-5-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #dcc8b4" data-bs-toggle="tooltip"
+                                                                    title="Lluvia de sobres">Lluvia de sobres</h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888"></p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-5-0-1"
+                                                    class="so-panel widget widget_sow-editor panel-last-child"
+                                                    data-index="9">
+                                                    <div
+                                                        class="jr-animation-fade-in-up jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-5-0-1">
+                                                        <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                                                            <div class="siteorigin-widget-tinymce textwidget">
+                                                                <p style="text-align: center;">
+                                                                    Queremos que sepas que nuestro mejor regalo es tu
+                                                                    presencia en este día tan especial.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Form -->
+                                    <div id="pg-7-6" class="panel-grid panel-has-style">
+                                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-6"
+                                            data-stretch-type="full" id="rsvp" data-jackrose-anchor="rsvp"
+                                            data-jackrose-background-parallax="{&quot;src&quot;:&quot;./img/rsvp.jpg&quot;,&quot;width&quot;:1600,&quot;height&quot;:900,&quot;ratio&quot;:0.5}">
+                                            <div id="pgc-7-6-0" class="panel-grid-cell panel-grid-cell-empty"></div>
+                                            <div id="pgc-7-6-1" class="panel-grid-cell panel-grid-cell-mobile-last">
+                                                <div id="panel-7-6-1-0"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-first-child"
+                                                    data-index="10">
+                                                    <div class="panel-widget-style panel-widget-style-for-7-6-1-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #dcc8b4">¿Asistirás?</h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888">Por favor, Confirme su
+                                                                    asistencia</p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-6-1-1"
+                                                    class="so-panel widget widget_jackrose-sow-rsvp-form panel-last-child"
+                                                    data-index="11">
+                                                    <div class="panel-widget-style panel-widget-style-for-7-6-1-1">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-rsvp-form so-widget-jackrose-sow-rsvp-form-default-d75171398898-7">
+                                                            <div class="jackrose-sow-rsvp-form">
+                                                                <div role="form">
+                                                                    <div class="screen-reader-response">
+                                                                        <p role="status" aria-live="polite"
+                                                                            aria-atomic="true"></p>
+                                                                        <ul></ul>
+                                                                    </div>
+                                                                    <form id="rsvpForm" autocomplete="off" novalidate="novalidate">
+                                                                        <p>
+                                                                            <label>Su nombre</label>
+                                                                            <br>
+                                                                            <span class="guestname">
+                                                                                <input type="text" id="guestname" name="guestname" 
+                                                                                    value="" size="40"
+                                                                                    class="input-block" autocomplete="off" />
+                                                                            </span>
+                                                                        </p>
+                                                                        <p>
+                                                                            <label>Dirección de correo
+                                                                                electrónico</label>
+                                                                            <br>
+                                                                            <span class="email">
+                                                                                <input type="email" id="email" name="email"
+                                                                                    value="" size="40"
+                                                                                    class="input-block" autocomplete="off" />
+                                                                            </span>
+                                                                        </p>
+                                                                        <p>
+                                                                            <label>¿Asistirás?</label>
+                                                                            <br>
+                                                                            <span id="attend" class="attend">
+                                                                                <span class="wpcf7-radio input-radio">
+                                                                                    <span class="wpcf7-list-item">
+                                                                                        <label>
+                                                                                            <input type="radio" name="attend" value="Sí, estaré allí"/>
+                                                                                            <span class="wpcf7-list-item-label">Sí, estaré allí.</span>
+                                                                                        </label>
+                                                                                    </span>
+                                                                                    <span class="wpcf7-list-item">
+                                                                                        <label>
+                                                                                            <input type="radio" name="attend" value="Sorry, I can&#039;t come"/>
+                                                                                            <span class="wpcf7-list-item-label">Lo siento, no podre ir.</span>
+                                                                                        </label>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </span>
+                                                                        </p>
+                                                                        <!-- <p>
+                                                                            <label>Meal preference</label>
+                                                                            <br>
+                                                                            <span class="wpcf7-form-control-wrap meal">
+                                                                                <select name="meal"
+                                                                                    class="wpcf7-form-control wpcf7-select input-block"
+                                                                                    aria-invalid="false">
+                                                                                    <option value="I eat anything">I eat
+                                                                                        anything</option>
+                                                                                    <option value="Beef">Beef</option>
+                                                                                    <option value="Chicken">Chicken
+                                                                                    </option>
+                                                                                    <option value="Vegetarian">
+                                                                                        Vegetarian</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </p> -->
+                                                                        <p>
+                                                                            <label>Notas</label>
+                                                                            <br>
+                                                                            <span class="notes">
+                                                                                <textarea id="notes" name="notes" cols="40"
+                                                                                    rows="3" autocomplete="off"></textarea>
+                                                                            </span>
+                                                                        </p>
+                                                                        <p>
+                                                                            <input type="submit" value="Enviar Confirmación" class="wpcf7-submit input-block" />
+                                                                        </p>
+                                                                        <p style="display: none !important;">
+                                                                            <input type="hidden" id="ak_js_1"
+                                                                                name="_wpcf7_ak_js" value="199" />
+                                                                        </p>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="pgc-7-6-2" class="panel-grid-cell panel-grid-cell-empty"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Dress code -->
+                                    <div id="pg-7-5" class="panel-grid panel-has-style">
+                                        <div id="registry" data-jackrose-anchor="registry"
+                                            class="panel-row-style panel-row-style-for-7-5">
+                                            <div id="pgc-7-5-0" class="panel-grid-cell">
+                                                <div id="panel-7-5-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-first-child"
+                                                    data-index="8">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-5-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #dcc8b4" data-bs-toggle="tooltip"
+                                                                    title="Código de vestimenta">Código de vestimenta
+                                                                </h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888"></p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-5-0-1"
+                                                    class="so-panel widget widget_sow-editor panel-last-child"
+                                                    data-index="9">
+                                                    <div
+                                                        class="jr-animation-fade-in-up jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-5-0-1">
+                                                        <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                                                            <div class="siteorigin-widget-tinymce textwidget">
+                                                                <h4 style="text-align: center;" class="jackrose-sow-events-grid-item-title typography-heading">
+                                                                        Traje formal</h4>
+                                                                <p style="text-align: center;">
+                                                                    Se reserva el color
+                                                                    <strong>blanco</strong> para la novia y los colores
+                                                                    <strong>gris</strong> y <strong>beige</strong> para
+                                                                    el novio.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quotes -->
+                                    <div id="pg-7-8" class="panel-grid panel-has-style">
+                                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-8"
+                                            data-stretch-type="full" id="quote" data-jackrose-anchor="quote"
+                                            data-jackrose-background-parallax="{&quot;src&quot;:&quot;./img/quote.jpg&quot;,&quot;width&quot;:1600,&quot;height&quot;:900,&quot;ratio&quot;:0.5}">
+                                            <div id="pgc-7-8-0" class="panel-grid-cell">
+                                                <div id="panel-7-8-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-quote panel-first-child panel-last-child"
+                                                    data-index="16">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-8-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-quote so-widget-jackrose-sow-quote-default-d75171398898-7">
+                                                            <div class="jackrose-sow-quote align-center"
+                                                                data-jackrose-autoplay="5000">
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">El hombre y la
+                                                                        mujer fueron creados el uno para el otro: “No es
+                                                                        bueno que el hombre esté solo” (Gn. 2, 18) “Por
+                                                                        eso deja el hombre a su padre y a su madre y se
+                                                                        une a su mujer y se hacen una sola carne”.</div>
+                                                                    <div class="jackrose-sow-quote-name">-</div>
+                                                                </div>
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">De este modo,
+                                                                        Dios ha creado al hombre y a la mujer por amor y
+                                                                        los ha llamado también al amor. Por tanto, el
+                                                                        amor mutuo entre ellos se convierte en imagen
+                                                                        del amor de Dios hacia nosotros.</div>
+                                                                    <div class="jackrose-sow-quote-name">-</div>
+                                                                </div>
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">“Como llama
+                                                                        divina es el fuego ardiente del amor. Ni las
+                                                                        muchas aguas pueden apagarlo, ni los ríos pueden
+                                                                        extinguirlo.”</div>
+                                                                    <div class="jackrose-sow-quote-name">
+                                                                        Cantares 8:6b -7a
+                                                                    </div>
+                                                                </div>
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">“La capacidad
+                                                                        de reír juntos, es el amor.”</div>
+                                                                    <div class="jackrose-sow-quote-name">
+                                                                        Francoise Sagan
+                                                                    </div>
+                                                                </div>
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">“El amor se
+                                                                        compone de una sola alma que habita en dos
+                                                                        cuerpos.”</div>
+                                                                    <div class="jackrose-sow-quote-name">
+                                                                        Aristóteles
+                                                                    </div>
+                                                                </div>
+                                                                <div class="jackrose-sow-quote-item">
+                                                                    <div class="jackrose-sow-quote-text">“Lo más grande
+                                                                        que aprenderás en la vida será a amar y ser
+                                                                        amado de vuelta.”</div>
+                                                                    <div class="jackrose-sow-quote-name">
+                                                                        Moulin Rouge
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                    <div id="pg-7-9" class="panel-grid panel-has-style">
+                                        <div id="gallery" data-jackrose-anchor="gallery"
+                                            class="panel-row-style panel-row-style-for-7-9">
+                                            <div id="pgc-7-9-0" class="panel-grid-cell">
+                                                <div id="panel-7-9-0-0"
+                                                    class="so-panel widget widget_jackrose-sow-section-heading panel-first-child"
+                                                    data-index="17">
+                                                    <div
+                                                        class="jackrose-animation-fade-in panel-widget-style panel-widget-style-for-7-9-0-0">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-section-heading so-widget-jackrose-sow-section-heading-default-d75171398898-7">
+                                                            <header class="jackrose-sow-section-header align-center">
+                                                                <h2 class="jackrose-sow-section-heading typography-section-heading"
+                                                                    style="color: #dcc8b4" data-bs-toggle="tooltip"
+                                                                    title="Momentos capturados">Momentos capturados</h2>
+                                                                <p class="jackrose-sow-section-subheading"
+                                                                    style="color: #888888"></p>
+                                                            </header>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-7-9-0-1"
+                                                    class="so-panel widget widget_jackrose-sow-gallery-grid panel-last-child"
+                                                    data-index="18">
+                                                    <div
+                                                        class="jackrose-animation-fade-in-up panel-widget-style panel-widget-style-for-7-9-0-1">
+                                                        <div
+                                                            class="so-widget-jackrose-sow-gallery-grid so-widget-jackrose-sow-gallery-grid-default-d75171398898-7">
+                                                            <div class="jackrose-sow-gallery-grid">
+                                                                <div class="jackrose-sow-gallery-grid-filters">
+                                                                    <a href="#"
+                                                                        class="jackrose-sow-gallery-grid-filter active"
+                                                                        data-filter="*">Todas las fotos</a>
+                                                                    <a href="#" class="jackrose-sow-gallery-grid-filter"
+                                                                        data-filter=".jackrose-sow-engagement">Compromiso</a>
+                                                                    <a href="#" class="jackrose-sow-gallery-grid-filter"
+                                                                        data-filter=".jackrose-sow-pre-wedding">Pre-Boda</a>
+                                                                    <a href="#" class="jackrose-sow-gallery-grid-filter"
+                                                                        data-filter=".jackrose-sow-withfriends">Con
+                                                                        amigos</a>
+                                                                </div>
+                                                                <div
+                                                                    class="jackrose-sow-gallery-grid-items jackrose-sow-gallery-grid-4-columns lightgallery clear">
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery5.jpg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery5-540x737.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery5-540x737.jpg 540w, ./img/gallery/gallery5-220x300.jpg 220w, ./img/gallery/gallery5-768x1048.jpg 768w, ./img/gallery/gallery5-750x1024.jpg 750w, ./img/gallery/gallery5.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
+                                                                        <a href="./img/gallery/gallery7.jpg">
+                                                                            <img width="540" height="398"
+                                                                                src="./img/gallery/gallery7-540x398.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery7-540x398.jpg 540w, ./img/gallery/gallery7-300x221.jpg 300w, ./img/gallery/gallery7-768x565.jpg 768w, ./img/gallery/gallery7-1024x754.jpg 1024w, ./img/gallery/gallery7.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-pre-wedding">
+                                                                        <a href="./img/gallery/gallery3.jpg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery3-540x737.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery3-540x737.jpg 540w, ./img/gallery/gallery3-220x300.jpg 220w, ./img/gallery/gallery3-768x1048.jpg 768w, ./img/gallery/gallery3-750x1024.jpg 750w, ./img/gallery/gallery3.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery6.jpg">
+                                                                            <img width="540" height="398"
+                                                                                src="./img/gallery/gallery6-540x398.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery6-540x398.jpg 540w, ./img/gallery/gallery6-300x221.jpg 300w, ./img/gallery/gallery6-768x565.jpg 768w, ./img/gallery/gallery6-1024x754.jpg 1024w, ./img/gallery/gallery6.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
+                                                                        <a href="./img/gallery/gallery2.jpg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery2-540x737.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery2-540x737.jpg 540w, ./img/gallery/gallery2-220x300.jpg 220w, ./img/gallery/gallery2-768x1048.jpg 768w, ./img/gallery/gallery2-750x1024.jpg 750w, ./img/gallery/gallery2.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-pre-wedding">
+                                                                        <a href="./img/gallery/gallery4.jpg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery4-540x737.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery4-540x737.jpg 540w, ./img/gallery/gallery4-220x300.jpg 220w, ./img/gallery/gallery4-768x1048.jpg 768w, ./img/gallery/gallery4-750x1024.jpg 750w, ./img/gallery/gallery4.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
+                                                                        <a href="./img/gallery/gallery8.jpg">
+                                                                            <img width="540" height="398"
+                                                                                src="./img/gallery/gallery8-540x398.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery8-540x398.jpg 540w, ./img/gallery/gallery8-300x221.jpg 300w, ./img/gallery/gallery8-768x565.jpg 768w, ./img/gallery/gallery8-1024x754.jpg 1024w, ./img/gallery/gallery8.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div
+                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery1.jpg">
+                                                                            <img width="540" height="398"
+                                                                                src="./img/gallery/gallery1-540x398.jpg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                                srcset="./img/gallery/gallery1-540x398.jpg 540w, ./img/gallery/gallery1-300x221.jpg 300w, ./img/gallery/gallery1-768x565.jpg 768w, ./img/gallery/gallery1-1024x754.jpg 1024w, ./img/gallery/gallery1.jpg 1080w"
+                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/customWeb.js"></script>
+    <script src="https://unpkg.com/flickity@1.0.2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.0/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="js/jquery-sakura.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script defer type='text/javascript' src='https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js'
+        id='imagesloaded-js'></script>
+</body>
+
+</html>
