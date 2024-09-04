@@ -41,7 +41,7 @@ function iniciarAudio() {
                 toastr.success('El sonido ha sido activado. Puedes desactivarlo el boton inferior izquierdo.', 'Sonido Activado');
             }
         };
-        toastr.info('Quieres activar el sonido? Da click en esta alerta.', 'Activar Sonido', options);
+        toastr.info('Quieres activar el sonido?<br>Da click en esta alerta.', 'Activar Sonido', options);
     }
 }
 
