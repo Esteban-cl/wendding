@@ -2735,15 +2735,20 @@ P.has-drop-cap:after {
 
 .jackrose-sow-quote-item {
     width: 100%;
+    height: 100% !important;
     left: 0;
     left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity .5s ease-in-out;
-    backface-visibility: hidden
+    backface-visibility: hidden;
 }
 
 .jackrose-sow-quote-item.is-selected {
-    opacity: 1
+    opacity: 1;
 }
 
 .jackrose-sow-quote-text {
@@ -3719,6 +3724,13 @@ div.wpcf7 img.ajax-loader {
 
 /* More */
 
+.photo-radius > img {
+    width: 240px;
+    height: 260px;  
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .jackrose-sow-events-grid-item-photo img {
     height: 262.5px !important;
 }
@@ -3759,4 +3771,12 @@ div.wpcf7 img.ajax-loader {
 
 .mapboxgl-marker:hover .tooltip {
     display: block;
+}
+
+.toast-info {
+    background-color: #b4d2c8 !important;
+    color: #ffffff !important;
+    border-radius: 5px !important;
+    font-size: 1.2em !important;
+    width: 350px !important;
 }
