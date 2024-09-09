@@ -2421,17 +2421,29 @@ P.has-drop-cap:after {
 }
 
 .jackrose-sow-couple-intro>* {
-    display: inline-block;
+    display: block; /* inline-block, valor por defecto */
     text-align: center;
-    vertical-align: middle
+    /* vertical-align: middle */
 }
 
 .jackrose-sow-couple-intro-photo img {
     vertical-align: bottom
 }
 
+.jackrose-sow-couple-intro-photo #img-frame {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .jackrose-sow-couple-intro-name {
     margin-top: 1em
+}
+/* Quitar si se pone en un estado normal */
+.jackrose-sow-couple-intro-separator {
+    margin: 2em 0
 }
 
 @media screen and (max-width:767px) {

@@ -280,6 +280,19 @@ jQuery.noConflict()
   
       resizeMapLibre();
     }
+    if ($('.jackrose-sow-rsvp-form'.length > 0)) {  
+      const $el = $('.jackrose-sow-countdown');
+      const date = new Date($el.attr('data-jackrose-target'));
+      date.setDate(date.getDate() - 29);
+      date.setHours(0, 0, 0, 0);
+      
+      if (new Date() > date) { // new Date() > date
+        $('.jackrose-sow-rsvp-form').remove(0);
+        $('.so-widget-jackrose-sow-rsvp-form').html(`<div style="font-size: 22px; font-weight: bold; text-align: center; margin: auto;">Lo siento, el tiempo de reserva ha finalizado.</div>`);
+      }else{
+        $('.jackrose-sow-section-heading-limitDate').html('Tienes hasta el ' + date.toLocaleDateString('es-ES')); 
+      }
+    }
     if ($.fn.flickity) {
       $window.on('pageStart', function () {
         $('.hero-slider').each(function () {

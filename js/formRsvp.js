@@ -30,26 +30,41 @@ $(document).ready(function () {
 
             // Convertir los datos a un objeto o JSON si es necesario
             const data = Object.fromEntries(formData);
+            console.log(data);
+            
+            // Enviar la confirmación a la API de Wpp/send
+            const number = 3000025;
+            const check = data.attend === 'Sí, estaré allí' ? true : false;
+            const text1 = `Querid@,
 
-            // Enviar la confirmación a la API
-            fetch('http://localhost:3000/api/rsvp', {
-                    method: 'POST',
-                    body: JSON.stringify(data),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Success:', data);
-                    if (data) {
-                        return toastr.success('Confirmación enviada correctamente.');
-                    }
-                    return toastr.error('Error al enviar la confirmación.');
-                })
-                .catch(error => {
-                    toastr.error('Error al enviar la confirmación.');
-                    console.log('Error:', error);
-                });
+Muchas gracias por la invitación a tu boda. Me llena de alegría poder acompañarte en este día tan especial. Con todo el corazón, te confirmo que asistiré felizmente para celebrar junto a ustedes este hermoso momento.
+
+¡Nos vemos pronto!
+
+Con cariño, ${data.guestname}
+
+*Nota*
+
+${data.notes}
+
+`
+
+            const text2 = `Querido@,
+
+Quiero agradecerte profundamente por la invitación a tu boda. Es un honor que hayas pensado en mí para compartir un día tan importante. Sin embargo, con mucha tristeza debo informarte que no podré asistir. Aunque no estaré presente físicamente, estaré contigo en pensamiento y deseo para ti un día lleno de amor y felicidad.
+
+Con cariño, ${data.guestname}
+
+**Nota**
+
+${data.notes}
+
+`
+            const textUrl =  encodeURIComponent(check?text1:text2).replace(/\n/g, "%0A");;
+            const link = `https://api.whatsapp.com/send/?phone=${number}&text=${textUrl}&type=phone_number`
+
+            // Abrir una nueva ventana con el enlace de WhatsApp
+            window.open(link, '_blank');
+            
         });
 });

@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura & Alex</title>
+
+    <!-- Título que aparecerá al compartir -->
+    <meta property="og:title" content="Alex &amp; Laura" />
+    
+    <!-- Descripción que aparecerá al compartir -->
+    <meta property="og:description" content="Nuestra boda" />
+    
+    <!-- URL de la página -->
+    <meta property="og:url" content="https://www.tupagina.com" />
+    
+    <!-- URL de la imagen que aparecerá -->
+    <meta property="og:image" content="https://www.tupagina.com/ruta-a-la-imagen.jpg" />
+    
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+    
+    <!-- Opcional: nombre de tu sitio -->
+    <meta property="og:site_name" content="Alex &amp; Laura" />
+
+    <title>Alex & Laura</title>
     <link rel="icon" type="image/x-icon" href="./img/logos/hero-logo.png">
 
     <!-- CSS -->
@@ -504,7 +523,7 @@
                                 </li>
                                 <li id="menu-item-48"
                                     class="anchor-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48">
-                                    <a href="#events" aria-current="page">Cuándo &#038; Dónde</a>
+                                    <a href="#events" aria-current="page">Dónde &#038; Cuándo</a>
                                 </li>
                                 <li id="menu-item-50"
                                     class="anchor-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-50">
@@ -542,9 +561,15 @@
                                                                     src="img/intro/gromm&bride.jpeg"
                                                                     class="attachment-full size-full" alt=""
                                                                     loading="lazy" />
+
+                                                                <img width="240" height="260"
+                                                                    id="img-frame"
+                                                                    src="img/intro/intro-frame.png"
+                                                                    class="attachment-full size-full" alt=""
+                                                                    loading="lazy" />
                                                             </div>
-                                                            <div class="jackrose-sow-couple-intro align-center">
-                                                                <div class="jackrose-sow-couple-intro-groom ">
+                                                            <div class="jackrose-sow-couple-intro">
+                                                                <div class="jackrose-sow-couple-intro-groom">
                                                                     <div
                                                                         class="jackrose-sow-couple-intro-name typography-heading">
                                                                         John Alexander Hernández Restrepo</div>
@@ -649,7 +674,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- When & Where -->
+                                    <!-- Where & When -->
                                     <div id="pg-7-3" class="panel-grid panel-has-style">
                                         <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7-3"
                                             data-stretch-type="full" id="events" data-jackrose-anchor="events">
@@ -664,7 +689,7 @@
                                                             <header class="jackrose-sow-section-header align-center">
                                                                 <h2 class="jackrose-sow-section-heading typography-section-heading"
                                                                     style="color: #c8b4a0" data-bs-toggle="tooltip"
-                                                                    title="Donde & Cuando">Donde &amp;Cuando</h2>
+                                                                    title="Donde & Cuando">Dónde &amp;Cuándo</h2>
                                                                 <p class="jackrose-sow-section-subheading"
                                                                     style="color: #888888"></p>
                                                             </header>
@@ -836,7 +861,9 @@
                                                                     style="color: #dcc8b4">¿Asistirás?</h2>
                                                                 <p class="jackrose-sow-section-subheading"
                                                                     style="color: #888888">Por favor, Confirme su
-                                                                    asistencia</p>
+                                                                    asistencia.</p>
+                                                                    <p class="jackrose-sow-section-heading-limitDate"
+                                                                    style="color: #888888"></p>
                                                             </header>
                                                         </div>
                                                     </div>
@@ -1103,101 +1130,181 @@
                                                                         class="jackrose-sow-gallery-grid-filter active"
                                                                         data-filter="*">Todas las fotos</a>
                                                                     <a href="#" class="jackrose-sow-gallery-grid-filter"
-                                                                        data-filter=".jackrose-sow-engagement">Compromiso</a>
+                                                                        data-filter=".jackrose-sow-us">Nosotros</a>
                                                                     <a href="#" class="jackrose-sow-gallery-grid-filter"
-                                                                        data-filter=".jackrose-sow-pre-wedding">Pre-Boda</a>
+                                                                        data-filter=".jackrose-sow-engagement">Compromiso</a>
                                                                     <a href="#" class="jackrose-sow-gallery-grid-filter"
                                                                         data-filter=".jackrose-sow-withfriends">Con
                                                                         amigos</a>
                                                                 </div>
-                                                                <div
-                                                                    class="jackrose-sow-gallery-grid-items jackrose-sow-gallery-grid-4-columns lightgallery clear">
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
-                                                                        <a href="./img/gallery/gallery5.jpg">
+                                                                <div class="jackrose-sow-gallery-grid-items jackrose-sow-gallery-grid-4-columns lightgallery clear">
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-1.jpeg">
                                                                             <img width="540" height="737"
-                                                                                src="./img/gallery/gallery5-540x737.jpg"
+                                                                                src="./img/gallery/gallery-1.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery5-540x737.jpg 540w, ./img/gallery/gallery5-220x300.jpg 220w, ./img/gallery/gallery5-768x1048.jpg 768w, ./img/gallery/gallery5-750x1024.jpg 750w, ./img/gallery/gallery5.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
                                                                         </a>
                                                                     </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
-                                                                        <a href="./img/gallery/gallery7.jpg">
-                                                                            <img width="540" height="398"
-                                                                                src="./img/gallery/gallery7-540x398.jpg"
-                                                                                class="attachment-grid size-grid" alt=""
-                                                                                loading="lazy"
-                                                                                srcset="./img/gallery/gallery7-540x398.jpg 540w, ./img/gallery/gallery7-300x221.jpg 300w, ./img/gallery/gallery7-768x565.jpg 768w, ./img/gallery/gallery7-1024x754.jpg 1024w, ./img/gallery/gallery7.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
-                                                                        </a>
-                                                                    </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-pre-wedding">
-                                                                        <a href="./img/gallery/gallery3.jpg">
+
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-2.jpeg">
                                                                             <img width="540" height="737"
-                                                                                src="./img/gallery/gallery3-540x737.jpg"
+                                                                                src="./img/gallery/gallery-2.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery3-540x737.jpg 540w, ./img/gallery/gallery3-220x300.jpg 220w, ./img/gallery/gallery3-768x1048.jpg 768w, ./img/gallery/gallery3-750x1024.jpg 750w, ./img/gallery/gallery3.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
                                                                         </a>
                                                                     </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
-                                                                        <a href="./img/gallery/gallery6.jpg">
-                                                                            <img width="540" height="398"
-                                                                                src="./img/gallery/gallery6-540x398.jpg"
-                                                                                class="attachment-grid size-grid" alt=""
-                                                                                loading="lazy"
-                                                                                srcset="./img/gallery/gallery6-540x398.jpg 540w, ./img/gallery/gallery6-300x221.jpg 300w, ./img/gallery/gallery6-768x565.jpg 768w, ./img/gallery/gallery6-1024x754.jpg 1024w, ./img/gallery/gallery6.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
-                                                                        </a>
-                                                                    </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
-                                                                        <a href="./img/gallery/gallery2.jpg">
+
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery-3.jpeg">
                                                                             <img width="540" height="737"
-                                                                                src="./img/gallery/gallery2-540x737.jpg"
+                                                                                src="./img/gallery/gallery-3.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery2-540x737.jpg 540w, ./img/gallery/gallery2-220x300.jpg 220w, ./img/gallery/gallery2-768x1048.jpg 768w, ./img/gallery/gallery2-750x1024.jpg 750w, ./img/gallery/gallery2.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
                                                                         </a>
                                                                     </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-pre-wedding">
-                                                                        <a href="./img/gallery/gallery4.jpg">
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-4.jpeg">
                                                                             <img width="540" height="737"
-                                                                                src="./img/gallery/gallery4-540x737.jpg"
+                                                                                src="./img/gallery/gallery-4.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery4-540x737.jpg 540w, ./img/gallery/gallery4-220x300.jpg 220w, ./img/gallery/gallery4-768x1048.jpg 768w, ./img/gallery/gallery4-750x1024.jpg 750w, ./img/gallery/gallery4.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
                                                                         </a>
                                                                     </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-withfriends">
-                                                                        <a href="./img/gallery/gallery8.jpg">
-                                                                            <img width="540" height="398"
-                                                                                src="./img/gallery/gallery8-540x398.jpg"
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-5.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-5.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery8-540x398.jpg 540w, ./img/gallery/gallery8-300x221.jpg 300w, ./img/gallery/gallery8-768x565.jpg 768w, ./img/gallery/gallery8-1024x754.jpg 1024w, ./img/gallery/gallery8.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
                                                                         </a>
                                                                     </div>
-                                                                    <div
-                                                                        class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
-                                                                        <a href="./img/gallery/gallery1.jpg">
-                                                                            <img width="540" height="398"
-                                                                                src="./img/gallery/gallery1-540x398.jpg"
+
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-6.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-6.jpeg"
                                                                                 class="attachment-grid size-grid" alt=""
                                                                                 loading="lazy"
-                                                                                srcset="./img/gallery/gallery1-540x398.jpg 540w, ./img/gallery/gallery1-300x221.jpg 300w, ./img/gallery/gallery1-768x565.jpg 768w, ./img/gallery/gallery1-1024x754.jpg 1024w, ./img/gallery/gallery1.jpg 1080w"
-                                                                                sizes="(max-width: 540px) 100vw, 540px" />
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-7.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-7.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-8.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-8.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-9.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-9.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-10.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-10.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-11.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-11.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery-12.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-12.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-13.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-13.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-14.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-14.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-15.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-15.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-engagement">
+                                                                        <a href="./img/gallery/gallery-16.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-16.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="jackrose-sow-gallery-grid-item jackrose-sow-us">
+                                                                        <a href="./img/gallery/gallery-17.jpeg">
+                                                                            <img width="540" height="737"
+                                                                                src="./img/gallery/gallery-1.jpeg"
+                                                                                class="attachment-grid size-grid" alt=""
+                                                                                loading="lazy"
+                                                                            />
                                                                         </a>
                                                                     </div>
                                                                 </div>
