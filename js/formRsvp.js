@@ -30,10 +30,9 @@ $(document).ready(function () {
 
             // Convertir los datos a un objeto o JSON si es necesario
             const data = Object.fromEntries(formData);
-            console.log(data);
             
-            // Enviar la confirmación a la API de Wpp/send
-            const number = 3000025;
+            // Enviar la confirmación
+            const number = 573043457768;
             const check = data.attend === 'Sí, estaré allí' ? true : false;
             const text1 = `Querid@,
 
